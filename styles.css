@@ -1,0 +1,146 @@
+/*RESET*/
+* {
+    box-sizing: border-box;
+}
+
+body, html,
+header, main,
+ul, li, nav,
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*VARIABLES*/
+:root {
+    --bg-color-header: #010124;
+    --bg-color-header-nav-buttons-hover: orangered;
+    --bg-color-main: #05052e;
+    --bg-color-main-titulo-container: #02021d;
+}
+
+
+/*
+SE AGREGAR PREFIJOS PROPIETARIOS
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*CABECERA*/
+header {
+    display: inline-block;
+    width: 20%;
+    min-width: 80px;
+    height: 100vh;
+    background-color: var(--bg-color-header);
+    color: #FFFFFF;
+    padding-right: 0;
+}
+
+
+.header__titulo-container {
+    background-color: orangered;
+    color: #010101;
+    padding: 20px;
+    height: 12%;
+}
+
+.header__nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 88%;
+    font-family: Helvetica;
+    font-size: 1.2em;
+}
+
+
+.header__nav-container nav,
+.header__nav-container ul {
+    width: 100%;
+}
+
+.header__nav-container a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #FAFAFA;
+}
+
+.header__nav-container li {
+    margin: 20px 0;
+    height: 80px;
+    background-color: #02021d;
+}
+
+.header__nav-container a:hover {
+    background-color: var(--bg-color-header-nav-buttons-hover);
+    color: #010101;
+}
+
+/*MAIN*/
+.main {
+    line-height: 0;
+    width: 80%;
+    min-height: 100vh;
+    display: inline-block;
+    background-color: var(--bg-color-main);
+    position: absolute;
+    right: 0;
+}
+
+
+.main__titulo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 12vh;
+    width: 100%;
+    color: #FAFAFA;
+    font-family: Helvetica;
+    background-color: var(--bg-color-main-titulo-container);
+}
+
